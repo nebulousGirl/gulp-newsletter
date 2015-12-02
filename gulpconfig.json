@@ -1,0 +1,44 @@
+{
+    "tasksDir": "./tasks",
+    "compileDirs": {
+        "dist": "./dist",
+        "publish": "./publish",
+        "public": "./public"
+    },
+    "assetsDir": "",
+    "data": {
+        "langDir": "./lang",
+        "langMainFile": "messages.json",
+        "glob": "./data/**/*.json",
+        "replaceBase": "./data/",
+        "globalFile": "global.json",
+        "templateVar": "template",
+        "titleVar": "page_title",
+        "contentVar": "content"
+    },
+    "browserSync": {
+        "index": "index.html"
+    },
+    "images": {
+        "glob": "./**",
+        "workingDir": "./src/images",
+        "outputDir": "/images"
+    },
+    "clean": {
+        "glob": ["./**/*"]
+    },
+    "views": {
+        "workingDir": "./src/views",
+        "compileGlob": "./*.mustache",
+        "glob": "./**/*.mustache",
+        "partialsGlob": "./partials/**/*.mustache",
+        "replaceBase": "./partials/",
+        "outputDir": "/views"
+    },
+    "sass": {
+        "glob": "./src/scss/**",
+        "outputDir": "/css",
+        "concatFilename": "styles.min.css",
+        "browsers": ["last 5 versions", "> 2%", "ie 8", "safari 5"]
+    }
+}

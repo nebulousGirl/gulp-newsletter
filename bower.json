@@ -1,0 +1,16 @@
+{
+  "name": "nebulousGirl/gulp-newsletter",
+  "version": "0.1",
+  "authors": [
+    "Sonia Marquette <contact@nebulousweb.com>"
+  ],
+  "description": "A Gulp workflow to code HTML e-mails and newsletters.",
+  "keywords": [
+    "email",
+    "newsletter"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": {},
+  "overrides": {}
+}
