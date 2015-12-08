@@ -18,6 +18,7 @@
     "gulp-load-plugins": "^0.10.0",
     "gulp-mustache": "^1.1.1",
     "gulp-ruby-sass": "^2.0.3",
+    "gulp-zip": "^3.0.2",
     "merge": "^1.2.0",
     "stream-series": "^0.1.1",
     "vinyl": "^1.0.0",

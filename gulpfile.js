@@ -25,8 +25,9 @@
     gulp.task('sass', task('sass'));
     gulp.task('html', task('html'));
     gulp.task('inliner', task('inliner'));
+    gulp.task('compress', task('compress'));
     gulp.task('assets', gulp.parallel('images', 'sass'));
-    gulp.task('build', gulp.series('html', 'assets', 'inliner'));
+    gulp.task('build', gulp.series('html', 'assets', 'inliner', 'compress'));
 
     gulp.task('default', gulp.series('build'));
 
