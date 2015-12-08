@@ -8,6 +8,7 @@ module.exports = function (gulp, plugins, opts) {
                     removeStyleTags: false,
                     removeLinkTags: true
                 }))
-                .pipe(gulp.dest(opts.compileDir));
+                .pipe(gulp.dest(opts.compileDir))
+                .pipe(plugins.browserSync.reload({stream: true}));
     };
 };

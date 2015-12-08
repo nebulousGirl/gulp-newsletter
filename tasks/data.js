@@ -41,7 +41,13 @@ module.exports = function (gulp, plugins, opts) {
                 current_data[i] = content[i];
             }
         });
-
+        var main_domain = opts.data.langMainFile.split('.').shift();
+        data.lang = data.languages[data.locale][main_domain];
+        var domains = data.languages[data.locale];
+        for (var i in domains) {
+            if (i === main_domain) {continue;}
+            data.lang[i] = domains[i];
+        }
         return data;
     };
 };

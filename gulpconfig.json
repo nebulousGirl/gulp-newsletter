@@ -17,7 +17,7 @@
         "contentVar": "content"
     },
     "browserSync": {
-        "index": "index.html"
+        "index": "newsletter.html"
     },
     "images": {
         "glob": "./**",

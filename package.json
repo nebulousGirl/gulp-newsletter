@@ -1,5 +1,5 @@
 {
-  "name": "laasti-mustache-theme",
+  "name": "gulp-newsletter-workflow",
   "version": "0.1.0",
   "description": "A mustache starter theme with Gulp workflow to create HTML websites or to use with your web framework ",
   "main": "gulpfile.js",
