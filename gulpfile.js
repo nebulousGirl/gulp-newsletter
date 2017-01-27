@@ -33,7 +33,7 @@
 
     gulp.task('sync', function () {
         gulp.watch('./src/images/**', gulp.parallel('images'));
-        gulp.watch('./src/scss/**', gulp.series('sass', 'inliner'));
+        gulp.watch('./src/scss/**', gulp.series('sass','html','inliner'));
         gulp.watch('./src/views/**', gulp.series('html', 'inliner'));
     });
     gulp.task('watch', gulp.series('build', gulp.parallel('serve', 'sync')));
